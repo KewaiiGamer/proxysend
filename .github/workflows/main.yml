@@ -19,13 +19,9 @@ jobs:
       matrix:
         os:
           - ubuntu-20.04
-          - windows-latest
           
         engine:
-          - "css"
           - "csgo"
-          - "tf2"
-          - "l4d2"
           
         sm_version:
           - "1.11"
