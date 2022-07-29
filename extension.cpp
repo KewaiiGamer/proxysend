@@ -1376,8 +1376,7 @@ DETOUR_DECL_MEMBER4(CBaseServer_WriteDeltaEntities, void, CBaseClient *, client,
 {
 	if(!sv_stressbots->GetBool() &&
 		(client->IsFakeClient() ||
-		client->IsHLTV() ||
-		client->IsReplay())) {
+		client->IsHLTV())) {
 		writedeltaentities_client = nullptr;
 	} else {
 		writedeltaentities_client = client->GetPlayerSlot();
