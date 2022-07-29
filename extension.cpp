@@ -1423,8 +1423,7 @@ DETOUR_DECL_STATIC3(SV_ComputeClientPacks, void, int, clientCount, CGameClient *
 		CGameClient *client{clients[i]};
 		if(!sv_stressbots->GetBool() &&
 			(client->IsFakeClient() ||
-			client->IsHLTV() ||
-			client->IsReplay())) {
+			client->IsHLTV())) {
 			continue;
 		}
 		slots.emplace_back(client->GetPlayerSlot());
