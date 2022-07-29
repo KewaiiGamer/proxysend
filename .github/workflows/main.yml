@@ -28,23 +28,15 @@ jobs:
           - "l4d2"
           
         sm_version:
-          - "1.10"
+          - "1.11"
           
         include:
-          - sm_version: "1.10"
-            branch: "1.10-dev"
-            
-          - engine: "css"
-          
+          - sm_version: "1.11"
+            branch: "1.11-dev"
+              
           - engine: "csgo"
-          
-          - engine: "tf2"
-          
-          - engine: "l4d2"
             
           - os: ubuntu-20.04
-            
-          - os: windows-latest
             
     steps:
       - name: Prepare env
