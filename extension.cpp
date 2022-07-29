@@ -106,7 +106,7 @@ R call_vfunc(T *pThisPtr, size_t offset, Args ...args)
 class CFrameSnapshot;
 class CClientFrame;
 
-class CBaseClient : public IGameEventListener2, public IClient, public IClientMessageHandler
+class CBaseClient : public IGameEventListener2, public IClient, public INetMessageBinder
 {
 };
 
