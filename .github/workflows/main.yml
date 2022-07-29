@@ -118,10 +118,10 @@ jobs:
       - name: Checking out own repository
         uses: actions/checkout@v2
         with:
-          path: sendproxy
+          path: proxysend
 
-      - name: Compiling sendproxy files
-        working-directory: sendproxy
+      - name: Compiling proxysend files
+        working-directory: proxysend
         run: |
           mkdir build
           cd build
@@ -131,7 +131,7 @@ jobs:
       - name: Uploading package
         uses: actions/upload-artifact@v2
         with:
-          name: sendproxy-${{ matrix.engine }}-sm${{ matrix.sm_version }}-${{ matrix.os }}-${{ env.GITHUB_SHA_SHORT }}
-          path: sendproxy/build/package
+          name: proxysend-${{ matrix.engine }}-sm${{ matrix.sm_version }}-${{ matrix.os }}-${{ env.GITHUB_SHA_SHORT }}
+          path: proxysend/build/package
           
 
