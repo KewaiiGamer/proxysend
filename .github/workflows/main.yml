@@ -28,11 +28,11 @@ jobs:
           - "l4d2"
           
         sm_version:
-          - "1.11"
+          - "1.10"
           
         include:
-          - sm_version: "1.11"
-            branch: "1.11-dev"
+          - sm_version: "1.10"
+            branch: "1.10-dev"
             
           - engine: "css"
           
